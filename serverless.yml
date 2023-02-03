@@ -1,0 +1,47 @@
+org: ryanycw
+app: mmc-quant
+service: ${env:SERVERLESS_SERVICE_NAME}
+frameworkVersion: "3"
+useDotenv: true
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-dotenv-plugin
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: ${env:AWS_REGION_MMC}
+  profile: ${env:AWS_PROFILE_MMC} # profile of your aws credentials
+  memorySize: 512 # optional, in MB, default is 1024
+  timeout: 25 # optional, in seconds, default is 6
+  environment:
+  httpApi:
+    cors: true
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - lambda:InvokeFunction
+            - lambda:InvokeAsync
+            - ec2:DescribeNetworkInterfaces
+            - ec2:CreateNetworkInterface
+            - ec2:DeleteNetworkInterface
+            - ec2:DescribeInstances
+            - ec2:AttachNetworkInterface
+            - ec2:AssignPrivateIpAddresses
+            - ec2:UnassignPrivateIpAddresses
+            - logs:CreateLogGroup
+            - logs:CreateLogStream
+            - logs:PutLogEvents
+            
+          Resource: "*"
+
+functions:
+  - ${file(configs/account.yml)}
+
+custom:
+  dotenv:
+    variableExpansion: false
