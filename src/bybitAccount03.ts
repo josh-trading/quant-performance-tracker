@@ -12,11 +12,12 @@ export const trackBalance = async (
 
   // Track balance
   try {
-    const accountOKX: datatype.account.account = {info: new datatype.account.metadata({
-      exchange: "OKX", 
-      key: key.okxAcc1 as datatype.account.key
+    const accountBybit: datatype.account.account = {info: new datatype.account.metadata({
+      exchange: "BYBIT", 
+      key: key.bybitAcc3 as datatype.account.key,
+      recvWindow: "5000"
     })};
-    const res = await account.info.getBalance(accountOKX, "copyTrade");
+    const res = await account.info.getBalance(accountBybit, "copyTrade");
     console.log(res);
 
     const notion = new Client({
@@ -40,13 +41,13 @@ export const trackBalance = async (
               "title": [
                   {
                       "text": {
-                          "content": "OKX Account2(Holders)"
+                          "content": "Bybit Account3(Non-holders)"
                       }
                   }
               ]
           },
           "Balance": {
-              "number": parseFloat(res.data[0].totalEq)
+              "number": parseFloat(res.result.walletBalance)
           }
       }
     });

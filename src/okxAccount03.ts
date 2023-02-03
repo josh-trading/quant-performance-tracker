@@ -24,7 +24,7 @@ export const trackBalance = async (
     });
 
     const response1 = await notion.databases.query({
-      database_id: process.env.OKX_ACCOUNT_DATABASE,
+      database_id: process.env.ACCOUNT_BALANCE_DATABASE,
     });
     // Return update successfully message
 
@@ -33,14 +33,14 @@ export const trackBalance = async (
     const response2 = await notion.pages.create({
       "parent": {
         "type": "database_id",
-        "database_id": process.env.OKX_ACCOUNT_DATABASE
+        "database_id": process.env.ACCOUNT_BALANCE_DATABASE
       },
       "properties": {
           "Account": {
               "title": [
                   {
                       "text": {
-                          "content": "OKX Account1(Non-holders)"
+                          "content": "OKX Account3(Non-holders)"
                       }
                   }
               ]
