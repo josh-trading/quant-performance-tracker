@@ -2,7 +2,7 @@ okxAccount01:
   name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-okxAccount01
   handler: src/okxAccount01.trackBalance
   events:
-    - schedule: cron(* 0/1 * * ? *)
+    - schedule: cron(0 0/1 * * ? *)
     - httpApi:
       path: /okxAccount01
       method: post
@@ -11,7 +11,7 @@ okxAccount02:
   name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-okxAccount02
   handler: src/okxAccount02.trackBalance
   events:
-    - schedule: cron(* 0/1 * * ? *)
+    - schedule: cron(0 0/1 * * ? *)
     - httpApi:
       path: /okxAccount02
       method: post
@@ -20,7 +20,34 @@ okxAccount03:
   name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-okxAccount03
   handler: src/okxAccount03.trackBalance
   events:
-    - schedule: cron(* 0/1 * * ? *)
+    - schedule: cron(0 0/1 * * ? *)
     - httpApi:
       path: /okxAccount03
+      method: post
+
+bybitAccount01:
+  name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-bybitAccount01
+  handler: src/bybitAccount01.trackBalance
+  events:
+    - schedule: cron(0 0/1 * * ? *)
+    - httpApi:
+      path: /bybitAccount01
+      method: post
+
+bybitAccount02:
+  name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-bybitAccount02
+  handler: src/bybitAccount02.trackBalance
+  events:
+    - schedule: cron(0 0/1 * * ? *)
+    - httpApi:
+      path: /bybitAccount02
+      method: post
+
+bybitAccount03:
+  name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-bybitAccount03
+  handler: src/bybitAccount03.trackBalance
+  events:
+    - schedule: cron(0 0/1 * * ? *)
+    - httpApi:
+      path: /bybitAccount03
       method: post
