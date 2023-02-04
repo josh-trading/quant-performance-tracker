@@ -6,8 +6,8 @@ export const okxAcc1 = {
 }
 
 export const bybitAcc1 = {
-    key: process.env.BYBIT_APIKEY,
-    secret: process.env.BYBIT_SECRET
+    key: process.env.BYBIT_APIKEY_01,
+    secret: process.env.BYBIT_SECRET_01
 }
 
 // Official Account for Holders
@@ -18,8 +18,8 @@ export const okxAcc2 = {
 }
 
 export const bybitAcc2 = {
-    key: process.env.BYBITNO2_API,
-    secret: process.env.BYBITNO2_SECRET
+    key: process.env.BYBIT_API_O2,
+    secret: process.env.BYBIT_SECRET_O2
 }
 
 // Official Account for Non-holders
@@ -30,6 +30,6 @@ export const okxAcc3 = {
 }
 
 export const bybitAcc3 = {
-    key: process.env.BYBITNO3_API,
-    secret: process.env.BYBITNO3_SECRET
+    key: process.env.BYBIT_API_O3,
+    secret: process.env.BYBIT_SECRET_O3
 }
