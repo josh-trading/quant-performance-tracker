@@ -14,7 +14,7 @@ export const trackBalance = async (
   try {
     const accountOKX: datatype.account.account = {info: new datatype.account.metadata({
       exchange: "OKX", 
-      key: key.okxAcc1 as datatype.account.key
+      key: key.okxAcc3 as datatype.account.key
     })};
     const res = await account.info.getBalance(accountOKX, "copyTrade");
     console.log(res);
