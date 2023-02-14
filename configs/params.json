@@ -1,0 +1,92 @@
+{
+  "eth01OkxTest": {
+    "name": "eth01OkxTest",
+    "order": {
+      "symbol": "ETH-USDT",
+      "insType": "SWAP"
+    },
+    "table": {
+      "cache": "strategyCache"
+    }
+  },
+  "eth02OkxTest": {
+    "name": "eth02OkxTest",
+    "order": {
+      "symbol": "ETH-USDT",
+      "insType": "SWAP"
+    },
+    "table": {
+      "cache": "strategyCache"
+    }
+  },
+  "eth03OkxTest": {
+    "name": "eth03OkxTest",
+    "order": {
+      "symbol": "ETH-USDT",
+      "insType": "SWAP"
+    },
+    "table": {
+      "cache": "strategyCache"
+    }
+  },
+  "eth04OkxTest": {
+    "name": "eth04OkxTest",
+    "order": {
+      "symbol": "ETH-USDT",
+      "insType": "SWAP"
+    },
+    "table": {
+      "cache": "strategyCache"
+    }
+  },
+  "eth05OkxTest": {
+    "name": "eth05OkxTest",
+    "order": {
+      "symbol": "ETH-USDT",
+      "insType": "SWAP"
+    },
+    "table": {
+      "cache": "strategyCache"
+    }
+  },
+  "ethExplodeOkxTest": {
+    "name": "ethExplodeOkxTest",
+    "order": {
+      "symbol": "ETH-USDT",
+      "insType": "SWAP"
+    },
+    "table": {
+      "cache": "strategyCache"
+    }
+  },
+  "ethFire01OkxTest": {
+    "name": "ethFire01OkxTest",
+    "order": {
+      "symbol": "ETH-USDT",
+      "insType": "SWAP"
+    },
+    "table": {
+      "cache": "strategyCache"
+    }
+  },
+  "ethFire02OkxTest": {
+    "name": "ethFire02OkxTest",
+    "order": {
+      "symbol": "ETH-USDT",
+      "insType": "SWAP"
+    },
+    "table": {
+      "cache": "strategyCache"
+    }
+  },
+  "xrpFireOkxTest": {
+    "name": "xrpFireOkxTest",
+    "order": {
+      "symbol": "XRP-USDT",
+      "insType": "SWAP"
+    },
+    "table": {
+      "cache": "strategyCache"
+    }
+  }
+}
