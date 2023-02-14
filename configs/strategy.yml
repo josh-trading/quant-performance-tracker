@@ -1,0 +1,80 @@
+okxEth01Acc01:
+  name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-okxEth01Acc01
+  handler: src/okxEth01Acc01.trackBalance
+  events:
+    - schedule: cron(0 0/8 * * ? *)
+    - httpApi:
+      path: /okxEth01Acc01
+      method: post
+
+okxEth02Acc01:
+  name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-okxEth02Acc01
+  handler: src/okxEth02Acc01.trackBalance
+  events:
+    - schedule: cron(0 0/8 * * ? *)
+    - httpApi:
+      path: /okxEth02Acc01
+      method: post
+
+okxEth03Acc01:
+  name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-okxEth03Acc01
+  handler: src/okxEth03Acc01.trackBalance
+  events:
+    - schedule: cron(0 0/8 * * ? *)
+    - httpApi:
+      path: /okxEth03Acc01
+      method: post
+
+okxEth04Acc01:
+  name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-okxEth04Acc01
+  handler: src/okxEth04Acc01.trackBalance
+  events:
+    - schedule: cron(0 0/8 * * ? *)
+    - httpApi:
+      path: /okxEth04Acc01
+      method: post
+
+okxEth05Acc01:
+  name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-okxEth05Acc01
+  handler: src/okxEth05Acc01.trackBalance
+  events:
+    - schedule: cron(0 0/8 * * ? *)
+    - httpApi:
+      path: /okxEth05Acc01
+      method: post
+
+okxEthExplodeAcc01:
+  name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-okxEthExplodeAcc01
+  handler: src/okxEthExplodeAcc01.trackBalance
+  events:
+    - schedule: cron(0 0/8 * * ? *)
+    - httpApi:
+      path: /okxEthExplodeAcc01
+      method: post
+
+okxEthFire01Acc01:
+  name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-okxEthFire01Acc01
+  handler: src/okxEthFire01Acc01.trackBalance
+  events:
+    - schedule: cron(0 0/8 * * ? *)
+    - httpApi:
+      path: /okxEthFire01Acc01
+      method: post
+
+okxEthFire02Acc01:
+  name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-okxEthFire02Acc01
+  handler: src/okxEthFire02Acc01.trackBalance
+  events:
+    - schedule: cron(0 0/8 * * ? *)
+    - httpApi:
+      path: /okxEthFire02Acc01
+      method: post
+
+okxXrpFireAcc01:
+  name: ${env:SERVERLESS_SERVICE_NAME}-${env:AWS_STAGE}-okxXrpFireAcc01
+  handler: src/okxXrpFireAcc01.trackBalance
+  events:
+    - schedule: cron(0 0/8 * * ? *)
+    - httpApi:
+      path: /okxXrpFireAcc01
+      method: post
