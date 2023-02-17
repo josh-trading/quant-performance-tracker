@@ -47,7 +47,6 @@ provider:
 
 functions:
   - ${file(configs/account.yml)}
-  - ${file(configs/strategy.yml)}
 
 custom:
   dotenv:
